@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Home Remedies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #a8e6cf, #dcedc8);
+            overflow-x: hidden;
+            transition: background 0.5s ease-in-out;
+            animation: backgroundMove 6s ease-in-out infinite;
+        }
+
+        @keyframes backgroundMove {
+            0% {
+                background: linear-gradient(135deg, #a8e6cf, #dcedc8);
+            }
+            50% {
+                background: linear-gradient(135deg, #dcedc8, #a8e6cf);
+            }
+            100% {
+                background: linear-gradient(135deg, #a8e6cf, #dcedc8);
+            }
+        }
+
+        header {
+            background: linear-gradient(90deg, #66bb6a, #388e3c);
+            padding: 50px 0;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            margin: 0 20px;
+            color: #fff;
+            font-size: 22px;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffeb3b;
+            transform: scale(1.2);
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 100px 20px;
+            color: #fff;
+            background: linear-gradient(135deg, #66bb6a, #43a047);
+            position: relative;
+            z-index: 2;
+            border-bottom: 2px solid #388e3c;
+            animation: fadeIn 1.5s ease-out;
+            box-shadow: 0 8px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-section h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            animation: slideInFromTop 1s ease-out;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-section p {
+            font-size: 24px;
+            margin-bottom: 40px;
+            animation: slideInFromTop 1.5s ease-out;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .cta {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 18px 45px;
+            background: linear-gradient(45deg, #ff7043, #ff5722);
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            animation: bounce 1.5s infinite ease-in-out;
+        }
+
+        .cta:hover {
+            transform: scale(1.2);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            background-color: #ff5722;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .remedies-section {
+            padding: 80px 20px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .remedy-quote-container {
+            display: flex;
+            animation: scroll 25s linear infinite;
+            width: max-content; 
+            justify-content: flex-start;
+        }
+
+        .remedy-quote {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2e7d32; 
+            margin-right: 100px; 
+            padding: 15px;
+            border-radius: 10px;
+            background: linear-gradient(45deg, #e8f5e9, #c8e6c9); 
+            
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+            animation: fadeIn 0s ease-out;
+        }
+
+        .remedy-quote:nth-child(odd) {
+            background: linear-gradient(45deg, #f1f8e9, #dcedc8); 
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+        }
+
+        .remedy-quote:nth-child(even) {
+            background: linear-gradient(45deg, #e0f7fa, #b2ebf2); 
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+        }
+
+        .remedy-quote p {
+            font-size: 22px;
+            font-style: italic;
+            color: rgba(0, 0, 0, 0.6);
+            margin-top: 15px;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(-50%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .qr-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border: 5px solid #388e3c;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 35px rgba(0, 0, 0, 0.2);
+            animation: pulse 3s infinite ease-in-out;
+            z-index: 10;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .qr-container:hover {
+            transform: scale(1.1);
+        }
+
+        .qr-container img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .qr-container p {
+            text-align: center;
+            font-size: 18px;
+            color: #388e3c;
+            font-weight: bold;
+            margin-top: 12px;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        footer {
+            background: linear-gradient(90deg, #388e3c, #66bb6a);
+            color: #fff;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 60px;
+            font-size: 18px;
+            transition: background 0.5s ease-in-out;
+        }
+
+        footer:hover {
+            background: linear-gradient(90deg, #66bb6a, #388e3c);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-links">
+                <a href="home.html">Home.🏠</a>
+                <a href="remedies.html">Remedies.🍂</a>
+                <a href="about.html">About Us.✌🏻</a>
+                <a href="contact.html">Contact.🫰🏻</a>
+            </div>
+        </nav>
+        <div class="hero-section">
+            <h1>⊹ Welcome To Natural Home Remedies!</h1>
+            <p style="font-style:italic;">Your natural way to heal and thrive.</p>
+            <a href="remedies.html" class="cta">Explore Remedies..!</a>
+        </div>
+    </header>
+
+    <div class="remedies-section">
+        <div class="remedy-quote-container">
+            <div class="remedy-quote">
+                <h2 style="color:rgb(255, 107, 107);">Natural Remedies for Better Health!</h2>
+                <p>"The greatest wealth is health." - Virgil</p>
+            </div>
+            <div class="remedy-quote">
+                <h2 style="color: rgb(104, 104, 247);">Healing with Nature!</h2>
+                <p>"Let food be thy medicine and medicine be thy food." - Hippocrates</p>
+            </div>
+            <div class="remedy-quote">
+                <h2 style="color: rgb(253, 188, 65);">Holistic Healing!</h2>
+                <p>"Nature itself is the best physician." - Hippocrates</p>
+            </div>
+            <div class="remedy-quote">
+                <h2>Herbal Wisdom!</h2>
+                <p>"Herbs are the friend of the physician and the pride of the healer." - Unknown</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="qr-container">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://snazzy-zabaione-921691.netlify.app/remedies/&size=150x150" alt="QR Code">
+        <p>Scan to Visit!</p>
+    </div>
+
+    <footer>
+        &copy; 2024 Natural Home Remedies. All Rights Reserved.
+    </footer>
+</body>
+</html>

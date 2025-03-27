@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloe Vera Gel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4c3;  
+            color: #3e3e3e;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background: linear-gradient(90deg, #8bc34a, #689f38);  
+            padding: 10px;
+            text-align: center;
+            animation: slideDown 1s ease-out;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes slideDown {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s;
+        }
+
+        nav a:hover {
+            color: #c5e1a5;
+            transform: scale(1.1);
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+            margin: 0 0 100px 0;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #689f38;  
+            animation: fadeInUp 1s ease-in-out;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .remedy-img {
+            width: 60%;
+            max-width: 600px;
+            border-radius: 15px;
+            margin: 20px 0;
+            animation: zoomIn 1s ease-in-out;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            font-size: 28px;
+            background: linear-gradient(to right, #689f38, #8bc34a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: 30px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        p, li {
+            font-size: 18px;
+            color: #333;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        li {
+            list-style: none;
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        li::before {
+            content: '✔';
+            color: #689f38;
+            position: absolute;
+            left: 0;
+            font-size: 16px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #388e3c;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        a:hover {
+            color: #a5d6a7;
+            text-shadow: 0 0 5px rgba(106, 170, 100, 0.8);
+        }
+
+        footer {
+            background: linear-gradient(90deg, #689f38, #8bc34a);  
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            animation: slideUp 1s ease-out;
+            color: #fff;
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="remedies.html">Remedies</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Aloe Vera Gel</h1>
+        <img src="ALOVERAGEL.jpeg" alt="Aloe Vera Gel" class="remedy-img">
+        <p>
+            Aloe vera gel is a natural product derived from the aloe vera plant. It is widely used for its soothing and healing properties, particularly for skin care, burns, and hydration.
+        </p>
+        <p style="color: #1d8122;">
+            Key Benefits of Aloe Vera Gel:
+        </p>
+        <ul>
+            <li>Soothes sunburns and accelerates skin healing.</li>
+            <li>Hydrates and moisturizes the skin without leaving a greasy residue.</li>
+            <li>Reduces acne and pimples due to its anti-inflammatory properties.</li>
+            <li>Improves digestion and alleviates constipation when consumed orally.</li>
+            <li>Contains antioxidants that help protect the skin from aging.</li>
+        </ul>
+
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1-2 fresh aloe vera leaves</li>
+                <li>1/2 teaspoon of vitamin E oil (optional, for added nourishment)</li>
+                <li>1/2 teaspoon of essential oil (optional, for fragrance)</li>
+                <li>1/4 teaspoon of lemon juice (optional, for preservation)</li>
+                <li>Water (if needed, to adjust consistency)</li>
+            </ul>
+        </section>
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ul>
+                <li>Cut the aloe vera leaf close to the base of the plant.</li>
+                <li>Peel away the green outer skin using a sharp knife, exposing the transparent gel inside.</li>
+                <li>Use a spoon to scoop out the aloe vera gel into a clean bowl.</li>
+                <li>Optional: Add 1/2 teaspoon of vitamin E oil and a few drops of essential oil for extra nourishment and fragrance.</li>
+                <li>Optional: Add a small amount of lemon juice to help preserve the gel for a longer period.</li>
+                <li>Use a blender to blend the gel until smooth. You can add a little water if the gel is too thick.</li>
+                <li>Transfer the gel into a clean, airtight container for storage.</li>
+                <li>Store the aloe vera gel in the refrigerator for up to 1-2 weeks.</li>
+                <li>Your fresh aloe vera gel is now ready to use on your skin or hair!</li>
+            </ul>
+        </section>
+
+        <a href="remedies.html">← Back to Remedies</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Natural Home Remedies</p>
+    </footer>
+</body>
+</html>

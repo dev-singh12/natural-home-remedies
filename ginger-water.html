@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ginger Water</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c8e6c9; 
+            color: #3e3e3e;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header {
+            background-color: #4caf50;  
+            padding: 10px;
+            text-align: center;
+            animation: slideDown 1s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #c8e6c9;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+            margin: 0 0 100px 0;
+            animation: fadeInContent 1.5s ease-in;
+        }
+
+        @keyframes fadeInContent {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .remedy-img {
+            width: 60%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin: 20px 0;
+            transition: transform 0.3s;
+        }
+
+        .remedy-img:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #388e3c; 
+            animation: slideIn 1s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        h2 {
+            color: #66bb6a;  
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        a {
+            text-decoration: none;
+            color: #388e3c;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #66bb6a;
+        }
+
+        footer {
+            background-color: #4caf50;  
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            animation: fadeIn 1s ease-in;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 40px;
+            text-align: left;
+            display: inline-block;
+            margin: 20px 0;
+            animation: fadeInList 1.5s ease-in;
+        }
+
+        @keyframes fadeInList {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        li {
+            font-size: 18px;
+            color: #2c3e50;
+            margin: 10px 0;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="remedies.html">Remedies</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Ginger Water: A Natural Health Drink</h1>
+        <img src="ginger water.jpeg" alt="Ginger Water" class="remedy-img">
+        <p>
+            Ginger water is a refreshing and health-boosting drink made from fresh ginger root. It is known for its ability to improve digestion, reduce inflammation, and boost overall wellness.
+        </p>
+        <p style="color: green; font-weight: bold;">
+            Key Benefits of Ginger Water:
+        </p>
+        <ul>
+            <li>Improves digestion and alleviates bloating.</li>
+            <li>Helps reduce inflammation and relieve muscle pain.</li>
+            <li>Boosts the immune system and fights infections.</li>
+            <li>Aids in detoxifying the body and promoting healthy skin.</li>
+            <li>Provides natural hydration and refreshment.</li>
+        </ul>
+
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1 cup water</li>
+                <li>1-inch piece of fresh ginger root (or 1 teaspoon ginger powder)</li>
+                <li>1 teaspoon honey or lemon (optional, for taste)</li>
+                <li>Lemon slice (optional, for garnish)</li>
+            </ul>
+        </section>
+
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ul>
+                <li>Boil 1 cup of water in a small saucepan or kettle.</li>
+                <li>Peel and slice the ginger into thin pieces (or use ginger powder).</li>
+                <li>Once the water boils, add the ginger slices (or powder) to the water.</li>
+                <li>Simmer the ginger in the water for 5-10 minutes, depending on how strong you want the flavor.</li>
+                <li>Strain the water into a mug to remove the ginger pieces.</li>
+                <li>Add honey or lemon (optional) for sweetness or a tangy flavor.</li>
+                <li>Garnish with a lemon slice if desired.</li>
+                <li>Serve warm and enjoy your refreshing ginger water!</li>
+            </ul>
+        </section>
+
+        <a href="remedies.html">&larr; Back to Remedies</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Natural Home Remedies</p>
+    </footer>
+</body>
+</html>
+

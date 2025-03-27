@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mint Leaves: A Refreshing Herb</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e8f5e9;
+            color: #3e3e3e;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background-color: #43a047;
+            padding: 15px;
+            text-align: center;
+            animation: slideInFromTop 1s ease-out;
+        }
+
+        @keyframes slideInFromTop {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+            margin: 0px 0px 100px 0px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #2e7d32;
+            animation: slideInFromLeft 1s ease-out;
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-50%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        ul {
+            text-align: left;
+            display: inline-block;
+            animation: fadeInUp 1.8s ease-out;
+            margin: 0;
+        }
+
+        ul li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        h2 {
+            color: #66bb6a;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .ingredients, .instructions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: left;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        .ingredients li, .instructions li {
+            margin-bottom: 12px;
+        }
+
+        footer {
+            background-color: #43a047;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .remedy-img {
+            width: 60%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin: 20px 0;
+            animation: slideInFromBottom 2s ease-out;
+        }
+
+        @keyframes slideInFromBottom {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 15px;
+            }
+            main {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            p, ul {
+                font-size: 16px;
+            }
+            .remedy-img {
+                width: 100%;
+            }
+        }
+
+        .back-link {
+            color: #388e3c;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+            color: #66bb6a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="remedies.html">Remedies</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Mint Leaves: A Refreshing Herb</h1>
+        <img src="mint-leaves.jpeg" alt="Mint Leaves: A Refreshing Herb" class="remedy-img">
+        <p>
+            Mint leaves are a fragrant herb commonly used in culinary and medicinal applications. Known for their cooling properties, mint is often used to aid digestion and provide a refreshing flavor to drinks and dishes.
+        </p>
+        <p style="color:#2e7d32">
+            Key Benefits of Mint Leaves:
+        </p>
+        <ul>
+            <li>Helps with digestion and relieves indigestion.</li>
+            <li>Has a calming effect and helps relieve headaches.</li>
+            <li>Improves breath and has natural antibacterial properties.</li>
+            <li>Reduces inflammation and helps with skin conditions.</li>
+            <li>Boosts energy and refreshes the body.</li>
+        </ul>
+
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1 cup fresh mint leaves (washed)</li>
+                <li>1 cup hot water</li>
+                <li>1 teaspoon honey (optional, for sweetness)</li>
+                <li>1 teaspoon lemon juice (optional, for added flavor)</li>
+                <li>Fresh lemon slice (optional, for garnish)</li>
+            </ul>
+        </section>
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ul>
+                <li>Boil 1 cup of water in a kettle or saucepan.</li>
+                <li>Place the fresh mint leaves in a mug or teapot.</li>
+                <li>Once the water has boiled, pour it over the mint leaves.</li>
+                <li>Let the tea steep for 5-10 minutes, depending on how strong you want the flavor.</li>
+                <li>Remove the mint leaves from the water by straining the tea.</li>
+                <li>Optional: Add honey and lemon juice to sweeten and flavor the tea.</li>
+                <li>Garnish with a fresh lemon slice if desired.</li>
+                <li>Stir well and enjoy your refreshing mint tea!</li>
+            </ul>
+        </section>
+
+        <a href="remedies.html" class="back-link">← Back to Remedies</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Natural Home Remedies</p>
+    </footer>
+</body>
+</html>
